@@ -19,5 +19,6 @@ public class SeleniumTest {
         //3- Test if driver is working
 
         driver.get("https://www.google.com");
+        //This was my ever first commit on IntelliJ
     }
 }
