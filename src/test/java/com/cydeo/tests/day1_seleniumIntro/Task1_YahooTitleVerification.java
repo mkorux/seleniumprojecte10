@@ -29,6 +29,8 @@ public class Task1_YahooTitleVerification {
         if(actualTitle.equals(expectedTitle)){
             System.out.println("Verification PASSED");
         }else System.out.println("Verification FAILED");
+        
+        System.out.println("Thank you, Mehmet for keeping up the beat!!);
 
 
     }
