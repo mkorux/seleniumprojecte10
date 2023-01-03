@@ -13,5 +13,6 @@ public class Task1_YahooTitleVerification {
         System.out.println("currentTitle = " + currentTitle);
         driver.quit();
 
+
     }
 }
