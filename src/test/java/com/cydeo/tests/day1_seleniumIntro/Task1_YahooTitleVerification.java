@@ -6,12 +6,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Task1_YahooTitleVerification {
     public static void main(String[] args) {
+        //set up web driver
         WebDriverManager.chromedriver().setup();
+
+       //Create driver browser
         WebDriver driver=new ChromeDriver();
+
+        //Make our page fullscreen
+        driver.manage().window().maximize();
+
+        //2. Go to https://www.yahoo.com
         driver.get("https://wwww.yahoo.com");
-        String currentTitle=driver.getTitle();
-        System.out.println("currentTitle = " + currentTitle);
-        driver.quit();
+
+        //3. Verify title:
+        //Expected: Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos
+        String expectedTitle = "Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos";
+
+        String actualTitle=driver.getTitle();
+        System.out.println("currentTitle = " + actualTitle);
+
+        //actual title comes from the browser
 
 
     }
