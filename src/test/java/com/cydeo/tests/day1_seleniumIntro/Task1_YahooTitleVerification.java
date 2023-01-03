@@ -22,10 +22,13 @@ public class Task1_YahooTitleVerification {
         //Expected: Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos
         String expectedTitle = "Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports & Videos";
 
+        //actual title comes from the browser
         String actualTitle=driver.getTitle();
         System.out.println("currentTitle = " + actualTitle);
 
-        //actual title comes from the browser
+        if(actualTitle.equals(expectedTitle)){
+            System.out.println("Verification PASSED");
+        }else System.out.println("Verification FAILED");
 
 
     }
