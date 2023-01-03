@@ -8,13 +8,15 @@ import java.sql.Driver;
 
 public class SeleniumTest {
     public static void main(String[] args) {
-        //1-Setting up the wev driver manager
 
+        //1-Setting up the wev driver manager
         WebDriverManager.chromedriver().setup();
 
         //2- Creat instance of the chrome driver
-
         WebDriver driver= new ChromeDriver();
+
+        //this line maximizes my screen
+        driver.manage().window().maximize();
 
         //3- Test if driver is working
 
@@ -31,6 +33,12 @@ public class SeleniumTest {
         System.out.println("currentTitle = " + currentTitle);
         currentUrl=driver.getCurrentUrl();
         System.out.println("currentUrl = " + currentUrl);
+
+        // This will close the currently opened window
+        driver.close();
+
+        //This will close all the opened windows
+        driver.quit();
 
 
     }
