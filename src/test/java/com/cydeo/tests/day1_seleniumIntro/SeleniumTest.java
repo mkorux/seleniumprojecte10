@@ -19,6 +19,19 @@ public class SeleniumTest {
         //3- Test if driver is working
 
         driver.get("https://www.google.com");
-        //This was my ever first commit on IntelliJ
+
+        String currentUrl=driver.getCurrentUrl();
+        System.out.println("currentUrl = " + currentUrl);
+        driver.navigate().refresh();
+        String currentTitle=driver.getTitle();
+        System.out.println("currentTitle = " + currentTitle);
+
+        driver.navigate().to("https://www.tesla.com");
+        currentTitle=driver.getTitle();
+        System.out.println("currentTitle = " + currentTitle);
+        currentUrl=driver.getCurrentUrl();
+        System.out.println("currentUrl = " + currentUrl);
+
+
     }
 }
