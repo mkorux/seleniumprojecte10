@@ -24,15 +24,28 @@ public class T2_BackAndForthNavigation {
         WebElement abTestingLink=driver.findElement(By.linkText("A/B Testing"));
         abTestingLink.click();
 
+        //Verify the title of the page
         String expectedTitle="No A/B Test";
-
         String actualTitle=driver.getTitle();
-
         if(expectedTitle.equals(actualTitle)){
             System.out.println("PASSED");
         }else{
             System.out.println("FAILED");
         }
+
+        //Going back to Home page
+        driver.navigate().back();
+
+        //Verify the new title of the page
+        String actualTitle2= driver.getTitle();
+        String expectedTitle2="Practice";
+        if(expectedTitle2.equals(actualTitle2)){
+            System.out.println("PASSED");
+        }else{
+            System.out.println("FAILED");
+        }
+
+
 
 
     }
