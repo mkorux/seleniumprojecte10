@@ -24,6 +24,16 @@ public class T2_BackAndForthNavigation {
         WebElement abTestingLink=driver.findElement(By.linkText("A/B Testing"));
         abTestingLink.click();
 
+        String expectedTitle="No A/B Test";
+
+        String actualTitle=driver.getTitle();
+
+        if(expectedTitle.equals(actualTitle)){
+            System.out.println("PASSED");
+        }else{
+            System.out.println("FAILED");
+        }
+
 
     }
 }
