@@ -45,6 +45,8 @@ public class T5_MethodPractice {
             System.out.println("Attribute verification PASSED");
         }
 
+        driver.close();
+
 
     }
 }
