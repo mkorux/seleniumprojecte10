@@ -40,7 +40,7 @@ public class TC1_XpathCssSelector {
 
         //d. E-mail input box
         WebElement emailInputBox1=driver.findElement(By.cssSelector("input[type='text']"));//cssSelector
-        WebElement emailInputBox2=driver.findElement(By.xpath("input[@type='text']"));//xpath
+       // WebElement emailInputBox2=driver.findElement(By.xpath("input[@type='text']"));//xpath
 
         //e. “Retrieve password” button
         WebElement retrievePasswordButton=driver.findElement(By.xpath("//button[@id='form_submit']"));
@@ -50,10 +50,10 @@ public class TC1_XpathCssSelector {
 
         //4. Verify all web elements are displayed.
         System.out.println("homeLink1.isDisplayed() = " + homeLink1.isDisplayed());
-        System.out.println("header1 = " + header1);
-        System.out.println("email = " + email);
-        System.out.println("emailInputBox1 = " + emailInputBox1);
-        System.out.println("retrievePasswordButton = " + retrievePasswordButton);
-        System.out.println("poweredByText = " + poweredByText);
+        System.out.println("header1 = " + header1.isDisplayed());
+        System.out.println("email = " + email.isDisplayed());
+        System.out.println("emailInputBox1 = " + emailInputBox1.isDisplayed());
+        System.out.println("retrievePasswordButton = " + retrievePasswordButton.isDisplayed());
+        System.out.println("poweredByText = " + poweredByText.isDisplayed());
     }
 }
