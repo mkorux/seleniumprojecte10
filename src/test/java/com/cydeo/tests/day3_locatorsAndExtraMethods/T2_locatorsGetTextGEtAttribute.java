@@ -40,10 +40,12 @@ public class T2_locatorsGetTextGEtAttribute {
 
         //5- Verify “forgot password” href attribute’s value contains expected:
         String actualHrefValue=forgotYourPassword.getAttribute("href");
+        System.out.println("actualHrefValue = " + actualHrefValue);
+
         //Expected: forgot_password=yes
         String expectedHrefValue="forgot_password=yes";
 
-        if(actualMessage.equals(expectedMessage)){
+        if(actualHrefValue.contains(expectedHrefValue)){
             System.out.println("Href Value Test PASSED");
         }else {
             System.out.println("Href Value Test FAILED");
