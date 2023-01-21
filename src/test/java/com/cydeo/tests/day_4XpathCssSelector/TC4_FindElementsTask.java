@@ -29,7 +29,7 @@ public class TC4_FindElementsTask {
 
         //5- Print out the texts of the links.
         for (int i = 0; i < allLinks.size(); i++) {
-            System.out.println(allLinks.get(i));
+            System.out.println(allLinks.get(i).getText());
         }
         //6- Print out the HREF attribute values of the links
         for (WebElement each:allLinks) {
