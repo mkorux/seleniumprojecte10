@@ -1,12 +1,9 @@
-package com.cydeo.tests.day_4XpathCssSelector;
+package com.cydeo.tests.day4_XpathCssSelector;
 
 import com.cydeo.utilities.WebDriverFactory;
-import com.google.common.base.Verify;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import javax.xml.stream.events.EndElement;
 
 public class TC1_XpathCssSelector {
     public static void main(String[] args) {

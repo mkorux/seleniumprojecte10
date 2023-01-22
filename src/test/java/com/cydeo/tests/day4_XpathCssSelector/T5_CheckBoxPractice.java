@@ -1,4 +1,4 @@
-package com.cydeo.tests.day_4XpathCssSelector;
+package com.cydeo.tests.day4_XpathCssSelector;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;

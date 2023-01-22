@@ -1,4 +1,4 @@
-package com.cydeo.tests.day_4XpathCssSelector;
+package com.cydeo.tests.day4_XpathCssSelector;
 
 import com.cydeo.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -29,6 +29,8 @@ public class TC6_StaleElementREfException {
 
         //4- Refresh the page.
         driver.navigate().refresh();
+
+        //Reassigning the web element reference or relocate the web element because it is deleted after refreshing and it throws exception
 
         //5- Verify it is displayed, again.
         if (cydeoLink.isDisplayed()){

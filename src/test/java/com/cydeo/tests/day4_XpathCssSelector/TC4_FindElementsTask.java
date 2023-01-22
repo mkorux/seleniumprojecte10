@@ -1,13 +1,10 @@
-package com.cydeo.tests.day_4XpathCssSelector;
+package com.cydeo.tests.day4_XpathCssSelector;
 
 import com.cydeo.utilities.WebDriverFactory;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
